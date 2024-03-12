@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Opening Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            padding: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+	<legend>PERSONAL DETAILS</legend>
+    <div class="container">
+        <h2>Bank Account Opening Form</h2>
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+	    <label for="monthly income">Monthly Income:</label>
+            <input type="text" id="monthly income" name="monthly income" required>
+
+	    <label for="dob">DOB:</label>
+            <input type="text" id="DOB" name="DOB" required>
+
+	    Education Level:
+	    <input type="radio" name="education level" value="HSC">HSC
+	    <input type="radio" name="education level" value="SSC">SSC
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="initial_deposit">Initial Deposit:</label>
+            <input type="number" id="initial_deposit" name="initial_deposit" required>
+
+            <input type="submit" value="Submit">
+</fieldset>
+        </form>
+    </div>
+</body>
+</html>
